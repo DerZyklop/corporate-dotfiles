@@ -1,0 +1,30 @@
+# ls mit versteckten dateien und slashes an ordnern
+alias ls="ls -pa1"
+
+# Show/hide hidden files in Finder
+alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Hide/show the full path in the Finder window.
+alias showfinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES && killall Finder"
+alias hidefinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -bool NO && killall Finder"
+
+# ifconfig greps
+alias ip4="ifconfig |grep 'inet '"
+alias ip6="ifconfig |grep 'inet6 '"
+alias ipall="ifconfig |grep inet"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Open current folder
+alias o="open ."
+
+# Faster npm for Europeans
+command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Open dir or file in sublime
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl $1"
+alias s="subl"

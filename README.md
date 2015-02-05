@@ -44,4 +44,5 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 `ip6` ➡ Zeige die aktuelle IPv6-Adresse in der command line.
 
 `o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
+
 `s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text (v2 oder v3)

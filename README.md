@@ -1,6 +1,6 @@
 # PlaceWorkers dotfiles
 
-Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs als erstes die `~/.profile`, falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das aussehen oder verhalten des Terminals betreffen.
+Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs als erstes die `~/.profile`, falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
 
 Dieses Repository enthält die standard dotfiles für PlaceWorkers. Bei Fragen oder Problemen gerne an [mich](mailto:mail@der-zyklop.de) wenden.
 

@@ -16,8 +16,6 @@ alias hidefinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -b
 # ifconfig greps
 alias ip4="ifconfig |grep 'inet '"
 alias ip6="ifconfig |grep 'inet6 '"
-alias ipall="ifconfig |grep inet"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Open current folder
 alias o="open ."
@@ -26,5 +24,13 @@ alias o="open ."
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
 
 # Open dir or file in sublime
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl $1"
+function subl() {
+  if [ -f "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ]; then
+    /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl $1
+  elif [ -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ]; then
+    /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $1
+  else
+    echo "Uuups! No sublime installed :/"
+  fi
+}
 alias s="subl"

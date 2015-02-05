@@ -4,11 +4,13 @@ Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fenst
 
 Dieses Repository enthält die standard dotfiles für PlaceWorkers. Bei Fragen oder Problemen gerne an [mich](mailto:mail@der-zyklop.de) wenden.
 
-## Installation der PlaceWorkers dotfiles quick'n'dirty
+## Installation
+
+### quick'n'dirty
 
     cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/DerZyklop/placeworkers-dotfiles.git | tar -xzv --strip-components 1; sh init.sh;
 
-## Installation der PlaceWorkers dotfiles mit Erklärung
+### Installation der PlaceWorkers dotfiles mit Erklärung
 
 Falls du git in deiner command line bereits installiert hast, lade dir die Dotfiles per:
 
@@ -27,7 +29,7 @@ Was jetzt passiert ist folgendes:
 - Gängige node packages installieren (z.B. [grunt](http://gruntjs.com/) und [jshint](http://jshint.com/))
 - OSX settings verändern (z.B. damit versteckte Dateien immer angezeigt werden)
 
-# Neue commands
+## Neue commands
 
 Nach der installation stehen dir ein paar nützliche neue commands (oder besser aliasse) zur Verfügung:
 
@@ -46,3 +48,7 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 `o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
 
 `s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))
+
+## Eigene Konfigurationen
+
+Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann lege dafür eine `~/.extra` an.

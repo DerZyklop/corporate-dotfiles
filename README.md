@@ -22,9 +22,9 @@ Was jetzt passiert ist folgendes:
 
 - Symlinks für die dotfiles im User-Ordner setzen.
 - XCode commandline tools installieren
-- brew (Package-Manager für OSX) installieren
-- Gängige commandline tools per brew installieren (z.B. git und node)
-- Gängige node packages installieren (z.B. grunt und jshint)
+- [brew](http://brew.sh/) (Package-Manager für OSX) installieren
+- Gängige commandline tools per brew installieren (z.B. [git](http://git-scm.com/) und [node](http://nodejs.org/))
+- Gängige node packages installieren (z.B. [grunt](http://gruntjs.com/) und [jshint](http://jshint.com/))
 - OSX settings verändern (z.B. damit versteckte Dateien immer angezeigt werden)
 
 # Neue commands
@@ -45,4 +45,4 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 
 `o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
 
-`s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text (v2 oder v3)
+`s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))

@@ -1,14 +1,16 @@
 echo "${green}Want to install the new dotfiles?"
-echo "${red}Attention: This will overwrite your current dotfiles!"
+echo "${red}#####################################################"
+echo "${red}ATTENTION: This will overwrite your current dotfiles!"
+echo "${red}#####################################################"
 read -p "${green}Should i?${reset} [yN] " -n 1 -r
 echo "\nAllright!"
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	ln -s .dotfiles/.aliases ~/
-	ln -s .dotfiles/.bash_prompt ~/
-	ln -s .dotfiles/.exports ~/
-	ln -s .dotfiles/.functions ~/
-	ln -s .dotfiles/.path ~/
-	ln -s .dotfiles/.profile ~/
+	ln -sf .dotfiles/.aliases ~
+	ln -sf .dotfiles/.bash_prompt ~
+	ln -sf .dotfiles/.exports ~
+	ln -sf .dotfiles/.functions ~
+	ln -sf .dotfiles/.path ~
+	ln -sf .dotfiles/.profile ~
 	touch ~/.extra
 fi
 

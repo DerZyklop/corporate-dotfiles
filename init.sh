@@ -11,6 +11,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	ln -sf .dotfiles/.functions ~
 	ln -sf .dotfiles/.path ~
 	ln -sf .dotfiles/.profile ~
+	ln -sf .dotfiles/.gitconfig ~
 	touch ~/.extra
 fi
 

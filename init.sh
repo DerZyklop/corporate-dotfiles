@@ -9,10 +9,11 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	ln -s .dotfiles/.functions ~/
 	ln -s .dotfiles/.path ~/
 	ln -s .dotfiles/.profile ~/
+	touch ~/.extra
 fi
 
 for file in ~/.{exports,path,completions,bash_prompt,aliases,functions,extra,bashrc}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
 # Install XCode Command Line Tools
@@ -20,14 +21,14 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
 xcode-select --install &> /dev/null
 	# Wait until the XCode Command Line Tools are installed
 	while [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; do
-	    sleep 5
+			sleep 5
 	done
 fi
 
 source ".functions"
 # Install brew
 if ! commandExists "brew"; then
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
 
 brew update

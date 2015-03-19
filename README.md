@@ -8,7 +8,7 @@ Dieses Repository enthält die standard dotfiles für PlaceWorkers. Bei Fragen o
 
 ### quick'n'dirty
 
-    cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/DerZyklop/placeworkers-dotfiles.git | tar -xzv --strip-components 1; sh init.sh;
+    cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/DerZyklop/placeworkers-dotfiles/archive/master.zip | tar -xzv --strip-components 1; sh init.sh;
 
 ### Installation der PlaceWorkers dotfiles mit Erklärung
 
@@ -51,4 +51,4 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 
 ## Eigene Konfigurationen
 
-Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann lege dafür eine `~/.extra` an.
+Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann schreibe diese in `~/.extra`.

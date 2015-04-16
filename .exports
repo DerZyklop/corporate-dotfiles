@@ -6,6 +6,9 @@ shopt -s histappend                      # append to history, don't overwrite it
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+# The default editor vi usually confuses peolpe. nano is more intuitive
+export EDITOR="nano"
+
 # Prefer US English and use UTF-8
 export LANG="en_US.UTF-8";
 export LC_ALL="en_US.UTF-8";

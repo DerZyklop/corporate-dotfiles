@@ -26,6 +26,9 @@
   # Clone a repository including all submodules
   clone = clone --recursive
 
+  # Push a repository including all tags
+  push = push --tags
+
   # Add changes to stage
   a = add -A
 

@@ -25,8 +25,7 @@ Was jetzt passiert ist folgendes:
 - Symlinks für die dotfiles im User-Ordner setzen.
 - XCode commandline tools installieren
 - [brew](http://brew.sh/) (Package-Manager für OSX) installieren
-- Gängige commandline tools per brew installieren (z.B. [git](http://git-scm.com/) und [node](http://nodejs.org/))
-- Gängige node packages installieren (z.B. [grunt](http://gruntjs.com/) und [jshint](http://jshint.com/))
+- Gängige commandline tools per brew installieren (z.B. [git](http://git-scm.com/))
 - OSX settings verändern (z.B. damit versteckte Dateien immer angezeigt werden)
 
 ## Neue commands

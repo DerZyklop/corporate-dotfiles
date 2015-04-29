@@ -4,7 +4,19 @@ echo "${red}ATTENTION: This will overwrite your current dotfiles!"
 echo "${red}#####################################################"
 read -p "${green}Should i?${reset} [yN] " -n 1 -r
 echo "\nAllright!"
+
 if [[ $REPLY =~ ^[Yy]$ ]]; then
+	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig,extra}; do
+		echo "${red}#####################################################"
+		echo "${red}File $file exists! It needs to be deleted to install the new dotfiles."
+		echo "${red}#####################################################"
+		read -p "${green}Should i delete it?${reset} [yN] " -n 1 -r
+		echo "\nAllright!"
+		if [[ $REPLY =~ ^[Yy]$ ]]; then
+			rm -rf $file
+			#rm -rf ;
+		fi;
+	done;
 	ln -sf .dotfiles/.aliases ~
 	ln -sf .dotfiles/.bash_prompt ~
 	ln -sf .dotfiles/.exports ~
@@ -19,15 +31,6 @@ for file in ~/.{exports,path,completions,bash_prompt,aliases,functions,extra,bas
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
-# Install XCode Command Line Tools
-if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
-xcode-select --install &> /dev/null
-	# Wait until the XCode Command Line Tools are installed
-	while [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; do
-			sleep 5
-	done
-fi
-
 source ".functions"
 # Install brew
 if ! commandExists "brew"; then
@@ -41,14 +44,8 @@ brew cleanup
 # Install common brew packages
 brew install bash-completion
 brew install git
-brew install node
+# npm update -g jshint
 
-# Install common node packages
-npm update -g npm
-npm update -g grunt
-npm update -g grunt-cli
-npm update -g jshint
-
-# Change some OSX settings
+# # Change some OSX settings
 showdotfiles
 showfinderpath

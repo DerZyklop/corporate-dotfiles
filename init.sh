@@ -17,13 +17,13 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 			#rm -rf ;
 		fi;
 	done;
-	ln -sf .dotfiles/.aliases ~
-	ln -sf .dotfiles/.bash_prompt ~
-	ln -sf .dotfiles/.exports ~
-	ln -sf .dotfiles/.functions ~
-	ln -sf .dotfiles/.path ~
-	ln -sf .dotfiles/.profile ~
-	ln -sf .dotfiles/.gitconfig ~
+	ln -s .dotfiles/.aliases ~
+	ln -s .dotfiles/.bash_prompt ~
+	ln -s .dotfiles/.exports ~
+	ln -s .dotfiles/.functions ~
+	ln -s .dotfiles/.path ~
+	ln -s .dotfiles/.profile ~
+	ln -s .dotfiles/.gitconfig ~
 	touch ~/.extra
 fi
 
@@ -34,7 +34,7 @@ done;
 source ".functions"
 # Install brew
 if ! commandExists "brew"; then
-	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 brew update

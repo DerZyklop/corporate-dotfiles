@@ -7,6 +7,20 @@
 [core]
   excludesfile = ~/.gitignore
 
+[advice]
+  # Good explanation of git's fast forwarding: http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html
+  pushNonFastForward = false
+  # Deaktiviere die “how to stage/unstage/add” Tips durch git status:
+  statusHints = false
+
+[diff]
+  # Erlaube git diffdie Erkennung einfacher Umbenennungen und Kopien:
+  renames = copies
+
+[branch "master"]
+  # Setzte no fast-forward als Standardeinstellung
+  mergeoptions = "--no-ff"
+
 [alias]
 
   # View the current working tree status using the short format

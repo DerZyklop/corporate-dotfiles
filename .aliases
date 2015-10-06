@@ -1,3 +1,8 @@
+# open chrome in unsecure mode
+alias chrome_unsecure="open -a /Applications/Google\ Chrome.app --args --disable-web-security"
+# open chromium in unsecure mode
+alias chromium_unsecure="open -a /Applications/Chromium.app --args --disable-web-security"
+
 # ls mit versteckten dateien und slashes an ordnern
 alias ls="ls -pa1"
 

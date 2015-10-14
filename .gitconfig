@@ -27,7 +27,7 @@
   s = status -s
 
   # Show the diff between the latest commit and the current state
-  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  d = diff
   dc = diff --cached
 
   # `git di $number` shows the diff between the state `$number` revisions ago and the current state
@@ -69,3 +69,6 @@
 
   # Get lines with 'TODO' in comitted files.
   todo = "grep -E '# TODO|// TODO'"
+
+[credential]
+	helper = osxkeychain

@@ -46,3 +46,5 @@ else
   export yellow="\e[1;33m";
 fi;
 
+# Specify your brew cask defaults in this environment variable
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"

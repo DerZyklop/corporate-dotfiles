@@ -8,13 +8,13 @@ Dieses Repository enthält die standard dotfiles für PlaceWorkers. Bei Fragen o
 
 ### quick'n'dirty
 
-    cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/DerZyklop/placeworkers-dotfiles/archive/master.zip | tar -xzv --strip-components 1; sh init.sh;
+    cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/PlaceWorkersGmbH/dotfiles/archive/master.zip | tar -xzv --strip-components 1; sh init.sh;
 
 ### Installation der PlaceWorkers dotfiles mit Erklärung
 
 Falls du git in deiner command line bereits installiert hast, lade dir die Dotfiles per:
 
-    git clone https://github.com/DerZyklop/placeworkers-dotfiles.git ~/.dotfiles
+    git clone https://github.com/PlaceWorkersGmbH/dotfiles.git ~/.dotfiles
 
 Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst. Das geht so:
 

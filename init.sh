@@ -39,6 +39,9 @@ if ! commandExists "brew"; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# This sets necessary brew permissions.
+chown $(whoami):admin /usr/local
+
 brew update
 brew upgrade
 brew cleanup
@@ -46,13 +49,9 @@ brew cleanup
 # Install common brew packages
 brew install bash-completion
 brew install git
+brew link git --overwrite
 # npm update -g jshint
 
 # # Change some OSX settings
 showdotfiles
 showfinderpath
-
-# echo "${green}Problems during the installation? Run this:"
-# echo "${white}"'sudo chown $(whoami):admin /usr/local'
-# echo "${green}And try again:"
-# echo "${white}sh ~/.dotfiles/init.sh"

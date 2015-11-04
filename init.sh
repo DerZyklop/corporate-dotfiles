@@ -6,7 +6,7 @@ read -p "${green}Should i?${reset} [yN] " -n 1 -r
 echo "\nAllright!"
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig,extra}; do
+	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig}; do
 		if [ -f "$file" ]; then
 			echo "${red}#####################################################"
 			echo "${red}File $file exists! It needs to be deleted to install the new dotfiles."
@@ -51,3 +51,8 @@ brew install git
 # # Change some OSX settings
 showdotfiles
 showfinderpath
+
+# echo "${green}Problems during the installation? Run this:"
+# echo "${white}"'sudo chown $(whoami):admin /usr/local'
+# echo "${green}And try again:"
+# echo "${white}sh ~/.dotfiles/init.sh"

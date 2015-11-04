@@ -6,7 +6,7 @@ read -p "${green}Should i?${reset} [yN] " -n 1 -r
 echo "\nAllright!"
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig,extra}; do
+	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig}; do
 		if [ -f "$file" ]; then
 			echo "${red}#####################################################"
 			echo "${red}File $file exists! It needs to be deleted to install the new dotfiles."
@@ -39,6 +39,9 @@ if ! commandExists "brew"; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# This sets necessary brew permissions.
+chown $(whoami):admin /usr/local
+
 brew update
 brew upgrade
 brew cleanup
@@ -46,6 +49,7 @@ brew cleanup
 # Install common brew packages
 brew install bash-completion
 brew install git
+brew link git --overwrite
 # npm update -g jshint
 
 # # Change some OSX settings

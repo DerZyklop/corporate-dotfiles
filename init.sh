@@ -7,14 +7,16 @@ echo "\nAllright!"
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	for file in ~/.{aliases,bash_prompt,exports,functions,path,profile,gitconfig,extra}; do
-		echo "${red}#####################################################"
-		echo "${red}File $file exists! It needs to be deleted to install the new dotfiles."
-		echo "${red}#####################################################"
-		read -p "${green}Should i delete it?${reset} [yN] " -n 1 -r
-		echo "\nAllright!"
-		if [[ $REPLY =~ ^[Yy]$ ]]; then
-			rm -rf $file
-			#rm -rf ;
+		if [ -f "$file" ]; then
+			echo "${red}#####################################################"
+			echo "${red}File $file exists! It needs to be deleted to install the new dotfiles."
+			echo "${red}#####################################################"
+			read -p "${green}Should i delete it?${reset} [yN] " -n 1 -r
+			echo "\nAllright!"
+			if [[ $REPLY =~ ^[Yy]$ ]]; then
+				rm -rf $file
+				#rm -rf ;
+			fi;
 		fi;
 	done;
 	ln -s .dotfiles/.aliases ~

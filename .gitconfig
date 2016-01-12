@@ -20,6 +20,10 @@
 [branch "master"]
   # Setzte no fast-forward als Standardeinstellung
   mergeoptions = "--no-ff"
+[branch "dev"]
+  mergeoptions = "--no-ff"
+[branch "develop"]
+  mergeoptions = "--no-ff"
 
 [alias]
 
@@ -72,3 +76,8 @@
 
 [credential]
 	helper = osxkeychain
+
+[gitflow "prefix"]
+  feature = feature/
+[gitflow "branch"]
+  develop = dev

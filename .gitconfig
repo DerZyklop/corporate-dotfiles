@@ -20,10 +20,6 @@
 [branch "master"]
   # Setzte no fast-forward als Standardeinstellung
   mergeoptions = "--no-ff"
-[branch "dev"]
-  mergeoptions = "--no-ff"
-[branch "develop"]
-  mergeoptions = "--no-ff"
 
 [alias]
 

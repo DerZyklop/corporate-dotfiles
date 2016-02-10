@@ -51,3 +51,9 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 ## Eigene Konfigurationen
 
 Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann schreibe diese in `~/.extra`.
+
+## Troubleshooting
+
+Wenn die init.sh ausgeführt wurde und das Terminal immer noch so traurig aussieht wie vorher, dann liegt in deinem user-verzeichnis (also in `~/`) vermutlich eine `.bash_profile`
+
+Wenn das Terminal eine `.bash_profile` findet, wird alles folgende ignoriert. Wenn in deiner `.bash_profile` etwas wichtiges steht, dann kannst du es in `~/.extra` übertragen (siehe Abschnitt »Eigene Konfigurationen«).

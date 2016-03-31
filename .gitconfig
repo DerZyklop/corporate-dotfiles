@@ -78,18 +78,3 @@
 
 [credential]
 	helper = osxkeychain
-[difftool "sourcetree"]
-	cmd = "/Applications/DeltaWalker.app/Contents/MacOS/Deltawalker "
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[gitflow "prefix"]
-	feature = feature/
-[gitflow "branch"]
-	develop = dev
-
-
-[user]
-	name = Nils Neumann
-	email = neumann@placeworkers.com

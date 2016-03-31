@@ -48,3 +48,4 @@ fi;
 
 # Specify your brew cask defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PATH="/usr/local/sbin:$PATH"

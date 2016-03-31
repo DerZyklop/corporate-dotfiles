@@ -3,6 +3,12 @@
 [format]
   pretty = oneline
 [push]
+  # 'default = current' is very helpful when you work with feature branches.
+  # You will never see this again:
+  # fatal: The current branch feature/EBAU-147 has no upstream branch.
+  # To push the current branch and set the remote as upstream, use
+  #
+  #     git push --set-upstream origin feature/EBAU-147
   default = current
 [core]
   excludesfile = ~/.gitignore

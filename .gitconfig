@@ -1,74 +1,95 @@
 [color]
-  ui = true
+	ui = true
 [format]
-  pretty = oneline
+	pretty = oneline
 [push]
-  default = simple
+	# 'default = current' is very helpful when you work with feature branches.
+	# You will never see this again:
+	# fatal: The current branch feature/EBAU-147 has no upstream branch.
+	# To push the current branch and set the remote as upstream, use
+	#
+	#     git push --set-upstream origin feature/EBAU-147
+	default = current
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/neumann/.gitignore
 
 [advice]
-  # Good explanation of git's fast forwarding: http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html
-  pushNonFastForward = false
-  # Deaktiviere die “how to stage/unstage/add” Tips durch git status:
-  statusHints = false
+	# Good explanation of git's fast forwarding: http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html
+	pushNonFastForward = false
+	# Deaktiviere die “how to stage/unstage/add” Tips durch git status:
+	statusHints = false
 
 [diff]
-  # Erlaube git diffdie Erkennung einfacher Umbenennungen und Kopien:
-  renames = copies
+	# Erlaube git diffdie Erkennung einfacher Umbenennungen und Kopien:
+	renames = copies
 
 [branch "master"]
-  # Setzte no fast-forward als Standardeinstellung
-  mergeoptions = "--no-ff"
+	# Setzte no fast-forward als Standardeinstellung
+	mergeoptions = "--no-ff"
 
 [alias]
 
-  # View the current working tree status using the short format
-  s = status -s
+	# View the current working tree status using the short format
+	s = status -s
 
-  # Show the diff between the latest commit and the current state
-  d = diff
-  dc = diff --cached
+	# Show the diff between the latest commit and the current state
+	d = diff
+	dc = diff --cached
 
-  # `git di $number` shows the diff between the state `$number` revisions ago and the current state
-  di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
-  # Pull in remote changes for the current repository and all its submodules
-  pull = !"git pull; git submodule foreach git pull origin master"
-  # TODO: Check if 'git submodule update --init --recursive' is needed
+	# Pull in remote changes for the current repository and all its submodules
+	pull = !"git pull; git submodule foreach git pull origin master"
+	# TODO: Check if 'git submodule update --init --recursive' is needed
 
-  # Clone a repository including all submodules
-  clone = clone --recursive
+	# Clone a repository including all submodules
+	clone = clone --recursive
 
-  # Push a repository including all tags
-  push = push --tags
+	# Push a repository including all tags
+	push = git push --tags
 
-  # Add changes to stage
-  a = add -A
+	# Add changes to stage
+	a = add -A
 
-  # Commit changes with message
-  c = commit -m
+	# Commit changes with message
+	c = commit -m
 
-  # View abbreviated SHA, description, and history graph of the latest 20 commits
-  l = log --pretty=format:"%C(Yellow)%h%C(reset)|%C(cyan)%ad%C(reset)|%C(bold)%C(green)%an:%C(reset)%s%C(reset)" --date=short --graph
-  # TODO: need to figure out a way to use spaces in the pretty-format
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=format:"%C(Yellow)%h%C(reset)|%C(cyan)%ad%C(reset)|%C(bold)%C(green)%an:%C(reset)%s%C(reset)" --date=short --graph
+	# TODO: need to figure out a way to use spaces in the pretty-format
 
-  # Show verbose output about tags, branches or remotes
-  branches = branch -a
-  remotes = remote -v
+	# Show verbose output about tags, branches or remotes
+	branches = branch -a
+	remotes = remote -v
 
-  # Find commits by commit message
-  fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+	# Find commits by commit message
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
-  # Remove branches that have already been merged with master
-  # a.k.a. ‘delete merged’
-  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	# Remove branches that have already been merged with master
+	# a.k.a. ‘delete merged’
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
-  # List contributors with number of commits
-  contributors = shortlog --summary --numbered
+	# List contributors with number of commits
+	contributors = shortlog --summary --numbered
 
-  # Get lines with 'TODO' in comitted files.
-  todo = "grep -E '# TODO|// TODO'"
+	# Get lines with 'TODO' in comitted files.
+	todo = "grep -E '# TODO|// TODO'"
 
 [credential]
 	helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = "/Applications/DeltaWalker.app/Contents/MacOS/Deltawalker "
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gitflow "prefix"]
+	feature = feature/
+[gitflow "branch"]
+	develop = dev
+
+
+[user]
+	name = Nils Neumann
+	email = neumann@placeworkers.com

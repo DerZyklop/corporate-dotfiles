@@ -3,7 +3,7 @@
 [format]
   pretty = oneline
 [push]
-  default = simple
+  default = current
 [core]
   excludesfile = ~/.gitignore
 

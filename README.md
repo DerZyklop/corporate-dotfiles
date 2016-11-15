@@ -23,6 +23,7 @@ Was jetzt passiert ist folgendes:
 - Symlinks für die dotfiles dieses Repositories werden im User-Ordner gespeichert
 - [brew](http://brew.sh/) (Package-Manager für OSX) wird installiert
 - Gängige commandline tools werden per brew installiert
+- Falls bei dir eine .bash_profile vorhanden ist, wird dessen content in ~/.extra verschoben
 
 ## Neue commands
 
@@ -45,6 +46,6 @@ Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner bet
 
 ## Troubleshooting
 
-Wenn die init.sh ausgeführt wurde und das Terminal immer noch so traurig aussieht wie vorher, dann liegt in deinem user-verzeichnis (also in `~/`) vermutlich eine `.bash_profile`
+Wenn dein Terminal irgendwann wieder aussieht wie nach einer OSX installation, dann liegt in deinem user-verzeichnis (also in `~/`) vermutlich eine `.bash_profile`. Wenn das Terminal eine `.bash_profile` findet, werden alle anderen Dotfiles ignoriert. 
 
-Wenn das Terminal eine `.bash_profile` findet, wird alles folgende ignoriert. Wenn in deiner `.bash_profile` etwas wichtiges steht, dann kannst du es in `~/.extra` übertragen (siehe Abschnitt »Eigene Konfigurationen«).
+Wenn in deiner `.bash_profile` etwas wichtiges steht, dann kannst du es in `~/.extra` übertragen.

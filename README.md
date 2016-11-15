@@ -46,6 +46,6 @@ Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner bet
 
 ## Troubleshooting
 
-Wenn dein Terminal irgendwann wieder aussieht wie nach einer OSX installation, dann liegt in deinem user-verzeichnis (also in `~/`) vermutlich eine `.bash_profile`. Wenn das Terminal eine `.bash_profile` findet, werden alle anderen Dotfiles ignoriert. 
+Wenn dein Terminal irgendwann wieder aussieht wie nach einer OSX installation, dann existiert vermutlich eine `~/.bash_profile`. Wenn das Terminal eine `~/.bash_profile` findet, werden alle anderen Dotfiles ignoriert. 
 
 Wenn in deiner `.bash_profile` etwas wichtiges steht, dann kannst du es in `~/.extra` übertragen.

@@ -32,13 +32,13 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 			fi;
 		fi;
 	done;
-	ln -s .dotfiles/.aliases ~
-	ln -s .dotfiles/.bash_prompt ~
-	ln -s .dotfiles/.exports ~
-	ln -s .dotfiles/.functions ~
-	ln -s .dotfiles/.path ~
-	ln -s .dotfiles/.profile ~
-	ln -s .dotfiles/.gitconfig ~
+	ln -s ~/.dotfiles/.aliases ~
+	ln -s ~/.dotfiles/.bash_prompt ~
+	ln -s ~/.dotfiles/.exports ~
+	ln -s ~/.dotfiles/.functions ~
+	ln -s ~/.dotfiles/.path ~
+	ln -s ~/.dotfiles/.profile ~
+	ln -s ~/.dotfiles/.gitconfig ~
 
 	touch ~/.extra
 	if [[ -f ~/.bash_profile ]]; then

@@ -28,21 +28,16 @@ Was jetzt passiert ist folgendes:
 
 Nach der installation stehen dir ein paar nützliche neue commands (oder besser aliasse) zur Verfügung:
 
-`showdotfiles` ➡ Versteckte Dateien im Finder und auf dem Desktop **immer anzeigen**.
-`hidedotfiles` ➡ Versteckte Dateien im Finder und auf dem Desktop **nie anzeigen**.
-
-`hidedesktop` ➡ Alle Dateien auf dem Desktop ausblenden (nützlich bei Präsentationen)
-`showdesktop` ➡ Alle Dateien auf dem Desktop anzeigen.
-
-`showfinderpath` ➡ Zeige den gesammten Pfad im Finder-Fenster.
-`hidefinderpath` ➡ Zeige nur den Ordner-Namen im Finder-Fenster.
-
-`ip4` ➡ Zeige die aktuelle IPv4-Adresse in der command line.
-`ip6` ➡ Zeige die aktuelle IPv6-Adresse in der command line.
-
-`o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
-
-`s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))
+- `showdotfiles` ➡ Versteckte Dateien im Finder und auf dem Desktop **immer anzeigen**.
+- `hidedotfiles` ➡ Versteckte Dateien im Finder und auf dem Desktop **nie anzeigen**.
+- `hidedesktop` ➡ Alle Dateien auf dem Desktop ausblenden (nützlich bei Präsentationen)
+- `showdesktop` ➡ Alle Dateien auf dem Desktop anzeigen.
+- `showfinderpath` ➡ Zeige den gesammten Pfad im Finder-Fenster.
+- `hidefinderpath` ➡ Zeige nur den Ordner-Namen im Finder-Fenster.
+- `ip4` ➡ Zeige die aktuelle IPv4-Adresse in der command line.
+- `ip6` ➡ Zeige die aktuelle IPv6-Adresse in der command line.
+- `o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
+- `s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))
 
 ## Eigene Konfigurationen
 

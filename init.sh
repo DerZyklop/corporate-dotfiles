@@ -74,6 +74,14 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
 	# Use Brew‘s git even if there is another one.
 	brew link git --overwrite
+
+	# The new appearence works best with dark background
+
+	# Set new theme as default
+	defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
+	defaults write com.apple.terminal "Default Window Settings" -string "Pro"
+	defaults write com.apple.Terminal AppleFontSmoothing -int 1
+
 	echo "\n${green}Done! 🍻${reset}"
 else
 	echo "\nStopped!"

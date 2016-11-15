@@ -1,32 +1,28 @@
 # PlaceWorkers dotfiles
 
-Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs als erstes die `~/.profile`, falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
+Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs sogenannte dotfiles (z.B. `~/.profile`), falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
 
-Dieses Repository enthält die standard dotfiles für PlaceWorkers. Bei Fragen oder Problemen gerne an [mich](mailto:mail@der-zyklop.de) wenden.
+Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Bei Fragen oder Problemen gerne an [Nils](mailto:mail@der-zyklop.de) wenden.
 
 ## Installation
 
-### quick'n'dirty
+Navigiere in deinen User-Ordner:
 
-    cd ~; mkdir .dotfiles; cd .dotfiles; curl -#L https://github.com/PlaceWorkersGmbH/dotfiles/archive/master.zip | tar -xzv --strip-components 1; sh init.sh;
+    cd ~
 
-### Installation der PlaceWorkers dotfiles mit Erklärung
-
-Falls du git in deiner command line bereits installiert hast, lade dir die Dotfiles per:
+Lade dir die Dotfiles per:
 
     git clone https://github.com/PlaceWorkersGmbH/dotfiles.git ~/.dotfiles
 
-Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst. Das geht so:
+Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst:
 
     sh ~/.dotfiles/init.sh
 
 Was jetzt passiert ist folgendes: 
 
-- Symlinks für die dotfiles im User-Ordner setzen.
-- XCode commandline tools installieren
-- [brew](http://brew.sh/) (Package-Manager für OSX) installieren
-- Gängige commandline tools per brew installieren (z.B. [git](http://git-scm.com/))
-- OSX settings verändern (z.B. damit versteckte Dateien immer angezeigt werden)
+- Symlinks für die dotfiles dieses Repositories werden im User-Ordner gespeichert
+- [brew](http://brew.sh/) (Package-Manager für OSX) wird installiert
+- Gängige commandline tools werden per brew installiert
 
 ## Neue commands
 

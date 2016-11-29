@@ -56,8 +56,7 @@
 	c = commit -m
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=format:"%C(Yellow)%h%C(reset)|%C(cyan)%ad%C(reset)|%C(bold)%C(green)%an:%C(reset)%s%C(reset)" --date=short --graph
-	# TODO: need to figure out a way to use spaces in the pretty-format
+	l = log --pretty=format:'%>|(12)%C(Yellow)%h%C(reset)%<(1) %C(cyan)%ad%C(reset)%<(1) %C(bold)%C(green)%an:%<(1) %C(reset)%s%C(reset)' --date=format:'%y-%m-%d %H:%M' --graph
 
 	# Show verbose output about tags, branches or remotes
 	branches = branch -a

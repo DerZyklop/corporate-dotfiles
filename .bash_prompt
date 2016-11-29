@@ -59,7 +59,7 @@ prompt_git() {
 
     [ -n "${s}" ] && s=" [${s}]";
 
-    echo -e "${1}${branchName}${purple}${bold}${s}";
+    echo -e "${1}${branchName} $(tput setaf 236)status${purple}${bold}${s}";
   else
     return;
   fi;
@@ -86,16 +86,20 @@ PS1+="\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[$(tput setaf 236)\] @ ";
 PS1+="\[${hostStyle}\]\h"; # host
-
 if ifconfig | grep -q tun0; then
-  PS1+="\[${green}\] OpenVPN ✓${reset}"; # host
-elif ifconfig | grep -q ppp0; then
-  PS1+="\[${green}\] PPTP ✓${reset}"; # host
+  PS1+="\[${white}\] 🔒 ${reset}"; # host
 fi
 
 PS1+="\[$(tput setaf 236)\] in ";
 PS1+="\[${cyan}\]\w"; # working directory
 PS1+="\$(prompt_git \"$(tput setaf 236) on ${white}\")"; # Git repository details
+
+# Highlight the hostname when connected via SSH.
+if [[ "${SSH_TTY}" ]]; then
+  PS1+="\[$(tput setaf 236)\] through ";
+  PS1+="\[${green}\]SSH${reset}"; # host
+fi;
+
 PS1+="\n";
 PS1+="\[$(tput setaf 236)\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;

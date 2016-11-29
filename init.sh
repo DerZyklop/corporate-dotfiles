@@ -59,7 +59,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	fi
 
 	# This sets necessary brew permissions.
-	sudo chown $(whoami):admin /usr/local
+	sudo chown -R $(whoami):admin /usr/local
 
 	# If brew was already installed, this is always a good thing to do.
 	brew update

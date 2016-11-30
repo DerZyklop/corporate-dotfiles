@@ -20,11 +20,11 @@ Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation starte
 
     sh ~/.dotfiles/init_dotfiles.sh
 
-Was jetzt passiert ist folgendes: 
+Nun schließe das Terminal und öffne es wieder. 
 
-- Symlinks für die dotfiles dieses Repositories werden im User-Ordner gespeichert
-- [brew](http://brew.sh/) (Package-Manager für OSX) wird installiert
-- Gängige commandline tools werden per brew installiert
+Folgendes ist im Hintergrund passiert: 
+
+- Symlinks für die dotfiles dieses Repositories wurden im User-Ordner gespeichert
 - Falls bei dir eine .bash_profile vorhanden ist, wird dessen content in ~/.extra verschoben
 
 ### Installation der auto-completion für u.a. git
@@ -32,6 +32,8 @@ Was jetzt passiert ist folgendes:
 Wenn du auto-completion für (u.a.) Git auch haben möchtest, führe noch folgendes script aus:
 
     sh ~/.dotfiles/init_brew.sh
+
+Hierdurch wird [brew](http://brew.sh/) (Package-Manager für OSX) installiert.
 
 ## Neue commands
 
@@ -50,6 +52,13 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 ## Eigene Konfigurationen
 
 Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann schreibe diese in `~/.extra`.
+
+## Update
+
+Geht so:
+
+    cd ~/.dotfiles
+    git pull
 
 ## Troubleshooting
 

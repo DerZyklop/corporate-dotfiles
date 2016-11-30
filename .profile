@@ -1,5 +1,5 @@
 # Load the other shell dotfiles.
-# * ~/.extra can be used for other settings you don’t want to commit.
+# * ~/.extra can be used for your personal settings.
 
 for file in $HOME/.{exports,path,aliases,bash_prompt,functions,extra,bashrc}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";

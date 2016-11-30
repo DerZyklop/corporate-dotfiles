@@ -6,7 +6,7 @@ shopt -s histappend                      # append to history, don't overwrite it
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-# The default editor vi usually confuses peolpe. nano is more intuitive
+# The default editor is vi. This sets it to nano.
 export EDITOR="nano"
 
 # Prefer US English and use UTF-8
@@ -45,7 +45,3 @@ else
   export white="\e[1;37m";
   export yellow="\e[1;33m";
 fi;
-
-# Specify your brew cask defaults in this environment variable
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH="/usr/local/sbin:$PATH"

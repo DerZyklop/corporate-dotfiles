@@ -1,8 +1,3 @@
-# open chrome in unsecure mode
-alias chrome_unsecure="open -a /Applications/Google\ Chrome.app --args --disable-web-security"
-# open chromium in unsecure mode
-alias chromium_unsecure="open -a /Applications/Chromium.app --args --disable-web-security"
-
 # ls mit versteckten dateien und slashes an ordnern
 alias ls="ls -pa1"
 
@@ -21,12 +16,6 @@ alias hidefinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -b
 # ifconfig greps
 alias ip4="ifconfig |grep 'inet '"
 alias ip6="ifconfig |grep 'inet6 '"
-
-# Open current folder
-alias o="open ."
-
-# Faster npm for Europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
 
 # Open dir or file in sublime
 function subl() {

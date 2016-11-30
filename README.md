@@ -45,7 +45,6 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 - `hidefinderpath` ➡ Zeige nur den Ordner-Namen im Finder-Fenster.
 - `ip4` ➡ Zeige die aktuelle IPv4-Adresse in der command line.
 - `ip6` ➡ Zeige die aktuelle IPv6-Adresse in der command line.
-- `o ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei im vorgesehenem Programm
 - `s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))
 
 ## Eigene Konfigurationen

@@ -27,7 +27,7 @@ Was jetzt passiert ist folgendes:
 - Gängige commandline tools werden per brew installiert
 - Falls bei dir eine .bash_profile vorhanden ist, wird dessen content in ~/.extra verschoben
 
-## Installation der auto-completion für u.a. git
+### Installation der auto-completion für u.a. git
 
 Wenn du auto-completion für (u.a.) Git auch haben möchtest, führe noch folgendes script aus:
 

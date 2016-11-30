@@ -41,8 +41,11 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	ln -s ~/.dotfiles/.gitconfig ~
 
 	touch ~/.extra
+
+	# Copy .bash_profile content to .extra if .bash_profile exists
 	if [[ -f ~/.bash_profile ]]; then
 		cat ~/.bash_profile >> ~/.extra
+		rm ~/.bash_profile
 	fi;
 
 	# This will make the content of the new dotfiles
@@ -52,31 +55,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	done;
 	source ".functions"
 
-	# Install brew
-	# Info: http://brew.sh
-	if ! commandExists "brew"; then
-		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	fi
-
-	# This sets necessary brew permissions.
-	sudo chown -R $(whoami):admin /usr/local
-
-	# If brew was already installed, this is always a good thing to do.
-	brew update
-	brew upgrade
-	brew cleanup
-
-	# Brew package for auto-completion for commands on ⇥
-	brew install bash-completion
-
-	# Brew git package, because usually it‘s newer than the installed.
-	brew install git
-
-	# Use Brew‘s git even if there is another one.
-	brew link git --overwrite
-
 	# The new appearence works best with dark background
-
 	# Set new theme as default
 	defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
 	defaults write com.apple.terminal "Default Window Settings" -string "Pro"

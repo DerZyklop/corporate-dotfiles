@@ -6,6 +6,8 @@ Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. 
 
 ## Installation
 
+### Installation der Dotfiles
+
 Navigiere in deinen User-Ordner:
 
     cd ~
@@ -16,7 +18,7 @@ Lade dir die Dotfiles per:
 
 Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst:
 
-    sh ~/.dotfiles/init.sh
+    sh ~/.dotfiles/init_dotfiles.sh
 
 Was jetzt passiert ist folgendes: 
 
@@ -24,6 +26,12 @@ Was jetzt passiert ist folgendes:
 - [brew](http://brew.sh/) (Package-Manager für OSX) wird installiert
 - Gängige commandline tools werden per brew installiert
 - Falls bei dir eine .bash_profile vorhanden ist, wird dessen content in ~/.extra verschoben
+
+## Installation der auto-completion für u.a. git
+
+Wenn du auto-completion für (u.a.) Git auch haben möchtest, führe noch folgendes script aus:
+
+    sh ~/.dotfiles/init_brew.sh
 
 ## Neue commands
 

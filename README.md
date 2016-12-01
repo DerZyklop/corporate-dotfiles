@@ -4,7 +4,7 @@ Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fenst
 
 Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Hier ein Vorher/Nachher-Bild des Terminals:
 
-![PlaceWorkers Terminal](./placeworkers-dotfiles.png)
+![PlaceWorkers Terminal](https://d17oy1vhnax1f7.cloudfront.net/items/0A2g3r1V0i2L0e1O1d0h/placeworkers-dotfiles.png)
 
 Bei Fragen oder Problemen gerne an [Nils](mailto:mail@der-zyklop.de) wenden.
 

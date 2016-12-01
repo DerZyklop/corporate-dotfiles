@@ -18,7 +18,7 @@ Navigiere in deinen User-Ordner:
 
 Lade dir die Dotfiles per:
 
-    git clone https://github.com/PlaceWorkersGmbH/dotfiles.git ~/.dotfiles
+    git clone http://192.168.0.49/git/dotfiles.git ~/.dotfiles
 
 Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst:
 

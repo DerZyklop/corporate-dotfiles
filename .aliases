@@ -13,10 +13,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias showfinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES && killall Finder"
 alias hidefinderpath="defaults write com.apple.finder _FXShowPosixPathInTitle -bool NO && killall Finder"
 
-# ifconfig greps
-alias ip4="ifconfig |grep 'inet '"
-alias ip6="ifconfig |grep 'inet6 '"
-
 # Open dir or file in sublime
 function subl() {
   if [ -f "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ]; then

@@ -2,7 +2,11 @@
 
 Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs sogenannte dotfiles (z.B. `~/.profile`), falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
 
-Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Bei Fragen oder Problemen gerne an [Nils](mailto:mail@der-zyklop.de) wenden.
+Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Hier ein Vorher/Nachher-Bild des Terminals:
+
+![PlaceWorkers Terminal](./placeworkers-dotfiles.png)
+
+Bei Fragen oder Problemen gerne an [Nils](mailto:mail@der-zyklop.de) wenden.
 
 ## Installation
 
@@ -45,8 +49,6 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 - `showdesktop` ➡ Alle Dateien auf dem Desktop anzeigen.
 - `showfinderpath` ➡ Zeige den gesammten Pfad im Finder-Fenster.
 - `hidefinderpath` ➡ Zeige nur den Ordner-Namen im Finder-Fenster.
-- `ip4` ➡ Zeige die aktuelle IPv4-Adresse in der command line.
-- `ip6` ➡ Zeige die aktuelle IPv6-Adresse in der command line.
 - `s ./path/to/dir/or/file/` ➡ Öffne Ordner oder Datei in Sublime Text ([v2](http://www.sublimetext.com/) oder [v3](http://www.sublimetext.com/3))
 
 ## Eigene Konfigurationen

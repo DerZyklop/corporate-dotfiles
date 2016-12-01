@@ -2,7 +2,7 @@
 
 Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs sogenannte dotfiles (z.B. `~/.profile`), falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
 
-Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Hier ein Vorher/Nachher-Bild des Terminals:
+Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Zum einen wird die Übersichtlichkeit verbessert zum anderen wird z.b. der git status und der aktuelle branch angezeigt, wenn man sich in einem Git-Ordner befindet. Hier ein Vorher/Nachher-Bild des Terminals:
 
 ![PlaceWorkers Terminal](https://d17oy1vhnax1f7.cloudfront.net/items/0A2g3r1V0i2L0e1O1d0h/placeworkers-dotfiles.png)
 

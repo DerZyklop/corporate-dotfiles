@@ -53,7 +53,7 @@ Nach der installation stehen dir ein paar nützliche neue commands (oder besser 
 
 ## Eigene Konfigurationen
 
-Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im placeworkers-dotfiles Repository zu suchen haben, dann schreibe diese in `~/.extra`.
+Wenn du eigene Konfigurationen hinzufügen möchtest, die nur deinen Rechner betreffen und/oder die nichts im corporate-dotfiles Repository zu suchen haben, dann schreibe diese in `~/.extra`.
 
 ## Update
 

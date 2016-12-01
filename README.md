@@ -1,10 +1,10 @@
-# PlaceWorkers dotfiles
+# Corportate dotfiles
 
 Nach einem cleaninstall von OSX läd das Terminal beim öffnen eines neuen Fensters/Tabs sogenannte dotfiles (z.B. `~/.profile`), falls vorhanden. Dort können Konfigurationen definiert werden, die z.B. das Aussehen oder Verhalten des Terminals betreffen.
 
-Dieses Repository enthält einige nützliche Konfigurationen für PlaceWorkers. Zum einen wird die Übersichtlichkeit verbessert zum anderen wird z.b. der git status und der aktuelle branch angezeigt, wenn man sich in einem Git-Ordner befindet. Hier ein Vorher/Nachher-Bild des Terminals:
+Dieses Repository enthält einige nützliche Konfigurationen für Unternehmen. Zum einen wird die Übersichtlichkeit verbessert zum anderen wird z.b. der git status und der aktuelle branch angezeigt, wenn man sich in einem Git-Ordner befindet. Hier ein Vorher/Nachher-Bild des Terminals:
 
-![PlaceWorkers Terminal](https://d17oy1vhnax1f7.cloudfront.net/items/0A2g3r1V0i2L0e1O1d0h/placeworkers-dotfiles.png)
+![Vorher Nachher Terminal](https://d17oy1vhnax1f7.cloudfront.net/items/0A2g3r1V0i2L0e1O1d0h/placeworkers-dotfiles.png)
 
 Bei Fragen oder Problemen gerne an [Nils](mailto:mail@der-zyklop.de) wenden.
 
@@ -18,7 +18,7 @@ Navigiere in deinen User-Ordner:
 
 Lade dir die Dotfiles per:
 
-    git clone http://192.168.0.49/git/dotfiles.git ~/.dotfiles
+    git clone https://github.com/DerZyklop/corporate-dotfiles.git ~/.dotfiles
 
 Die neuen dotfiles liegen jetzt im Ordner `~/.dotfiles`. Die installation startest du indem du die init-datei ausführst:
 

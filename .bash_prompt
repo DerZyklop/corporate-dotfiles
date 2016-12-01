@@ -90,10 +90,9 @@ PS1+="\[${hostStyle}\]\h"; # host
 # This is broken since Sierra
 # if ifconfig | grep -q utun1; then
 #   PS1+="\[${white}\] 🔒 ${reset}"; # OpenVPN connected
-# el
-if ifconfig | grep -q ppp0; then
-  PS1+="\[${green}\] 🏢 ${reset}"; # PPPoE connected
-fi
+# elif ifconfig | grep -q ppp0; then
+#   PS1+="\[${green}\] 🏢 ${reset}"; # PPPoE connected
+# fi
 
 PS1+="\[$(tput setaf 236)\] in ";
 PS1+="\[${cyan}\]\w"; # working directory
